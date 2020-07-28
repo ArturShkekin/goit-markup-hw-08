@@ -1,0 +1,17 @@
+.logo {
+    @extend %logo;
+    font-size: 26px;
+    line-height: 31px;
+    color: $colorblack;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 85px;
+    &:hover,
+    &:focus {
+        color: $colorhover; 
+    }
+}
+
+.span-logo {
+    color: $colorhover;
+}

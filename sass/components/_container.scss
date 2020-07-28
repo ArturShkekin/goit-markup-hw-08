@@ -1,0 +1,17 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    @media screen and (min-width: $mobile-upper) {
+        width: $mobile-upper;  
+    }
+
+    @media screen and (min-width: $tablet-upper) {
+        width: $tablet-upper; 
+    }
+
+    @media screen and (min-width: $desktor-upper) {
+        width: $desktor-upper; 
+    }
+}

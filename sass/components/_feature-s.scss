@@ -1,0 +1,93 @@
+.feature-s {
+    background-color: $color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (min-width: $mobile-upper) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: $tablet-upper) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    } 
+    @media screen and (min-width: $desktor-upper) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.is-hidden {
+   display: none;
+   margin: 0;
+}
+
+.feature-div {
+    display: flex;
+}
+
+.feature-ul {
+    text-align: center;
+    @media screen and (min-width: $tablet-upper){
+        display: flex; 
+        flex-wrap: wrap;
+        margin: -5px;
+    }
+    @media screen and (min-width: $desktor-upper){
+        margin: -10px;
+    }
+    
+}
+
+/*.feature-li:not(:last-child) {
+    margin-right: 30px;
+}*/
+
+.feature-li {
+    &:not(:last-child) {
+        @media screen and (max-width: 767px){
+            margin-bottom: 30px;
+        }
+    }
+    @media screen and (min-width: $tablet-upper){
+        width: calc((100%-4*5px)/2);
+    }
+
+    @media screen and (min-width: $desktor-upper){
+        display: block;
+        width: calc((100%-6*10px)/2);
+        &:not(:last-child) {
+        margin-right: 30px;
+    }
+    }
+}
+
+.antenna {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    background-color: $colorturbid;
+    border-radius: 4px;
+}
+
+.icon-antenna {
+    width: 70px;
+    height: 70px;
+}
+
+.feature-title {
+    @extend %font14;
+    padding-top: 30px;
+    margin: 0;
+    color: $colorsemyblack;
+}
+
+.feature-text {
+    @extend %font1424;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    margin: 0;
+    @media screen and (min-width: $mobile-upper) {
+        padding-bottom: 2px;
+    }
+}

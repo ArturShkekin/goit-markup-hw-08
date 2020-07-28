@@ -1,0 +1,44 @@
+.div-address {
+    margin-right: 69px;
+}
+
+.box-address {
+    padding-right: 15px;
+}
+
+.logo-footer {
+    @extend %logo;
+    font-size: 22px;
+    line-height: 26px;
+    color: $color;
+    &:hover,
+    &:focus {
+        color: $colorhover; 
+    }
+}
+
+.logo-footer-part {
+    color: $colorhover;
+    margin: 0;
+}
+
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    color: $color;
+    @extend %footer-address;
+    padding-top: 10px;
+    margin: 0;
+}
+  
+.footer-address-contacts {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.6);
+    @extend %footer-address;
+    padding-top: 9px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $colorhover; 
+    }
+}

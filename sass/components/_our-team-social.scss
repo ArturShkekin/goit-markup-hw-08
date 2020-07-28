@@ -1,0 +1,42 @@
+.team-social {
+    display: flex;
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 24px;
+}
+
+.team-social-network {
+    display: inline-flex;
+}
+
+.team-social-network:not(:last-child) {
+    margin-right: 10px;
+}
+
+.team-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    background-color: $color;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: $colorhover; 
+    }
+}
+
+.icon-instagram {
+    width: 20px;
+    height: 20px;
+    fill: $colortransgray;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-link:hover .icon-instagram,
+.team-link:focus .icon-instagram {
+    fill: $color;
+}

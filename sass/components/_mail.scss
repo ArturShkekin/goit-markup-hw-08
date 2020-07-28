@@ -1,0 +1,43 @@
+.div-mail {
+    display: flex;
+}
+
+.div-mail-ul {
+    display: flex;
+}
+
+.div-mail-li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.mail-link,
+.mail-link-tel {
+    display: inline-flex;
+    align-items: center;
+    color: $colorgray;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: $colorhover; 
+    }
+}
+
+.mail-link:hover .icon-link,
+.mail-link:focus .icon-link,
+.mail-link-tel:hover .icon-link-tel,
+.mail-link-tel:focus .icon-link-tel {
+    fill: $colorhover;
+}
+
+.icon-link,
+.icon-link-tel {
+    fill: $colorgray;
+    margin-right: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

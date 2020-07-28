@@ -1,0 +1,49 @@
+.doing-s {
+    background-color: $color;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.doing-div {
+    display: block;
+}
+
+.doing-title {
+    @extend %font36;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.doing-ul {
+    display: flex;
+}
+
+.doing-li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.doing {
+    display: block;
+}
+
+.doing-img {
+    position: relative;
+}
+
+.doing-background {
+    position: absolute;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    border-radius: 0px;
+    width: 370px;
+    height: 70px;
+}
+
+.doing-text {
+    @extend %font14;
+    text-align: center;
+    color: $color;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin: 0;
+}
