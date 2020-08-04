@@ -5,21 +5,34 @@
 .our-title {
     @extend %font36;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    @media screen and (min-width: $desktop-upper){
+        margin-bottom: 50px;
+    }
 }
 
 .our-ul {
     display: flex;
-}
-
-.our-li:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: $mobile-upper) {
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+    @media screen and (min-width: $tablet-upper){
+        flex-wrap: wrap;
+        margin: 0px;
+    }
 }
 
 .our-li {
     display: block;
+    max-width: 210px;
 }
 
+@media screen and (min-width: $mobile-upper) {
+        .our-div-logo {
+            max-width: 210px;
+        }
+        
 .our-div-logo {
     display: flex;
     align-items: center;
@@ -33,8 +46,9 @@
 .logo1 {
     width: 44.27px;
     height: 49.23px;
-    margin-left: 62px;
-    margin-right: 62px;
+    /*margin-left: 62px;
+    margin-right: 62px;*/
+    justify-content: center;
 }
 
 .logo2 {

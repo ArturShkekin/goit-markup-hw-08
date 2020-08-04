@@ -327,58 +327,6 @@ p {
   margin: 0;
 }
 
-.feature-div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.feature-ul {
-  text-align: center;
-}
-
-@media screen and (min-width: 768px) {
-  .feature-ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    margin: -5px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .feature-ul {
-    margin: -10px;
-  }
-}
-
-/*.feature-li:not(:last-child) {
-    margin-right: 30px;
-}*/
-@media screen and (max-width: 767px) {
-  .feature-li:not(:last-child) {
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .feature-li {
-    width: calc((100%-4*5px)/2);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .feature-li {
-    display: block;
-    width: calc((100%-6*10px)/2);
-  }
-  .feature-li:not(:last-child) {
-    margin-right: 30px;
-  }
-}
-
 .antenna {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -406,15 +354,10 @@ p {
 }
 
 .feature-text {
+  text-align: start;
   padding-top: 10px;
-  padding-bottom: 3px;
+  padding-bottom: 2px;
   margin: 0;
-}
-
-@media screen and (min-width: 480px) {
-  .feature-text {
-    padding-bottom: 2px;
-  }
 }
 
 .footer {
@@ -1003,7 +946,13 @@ p {
 
 .our-title {
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .our-title {
+    margin-bottom: 50px;
+  }
 }
 
 .our-ul {
@@ -1012,12 +961,40 @@ p {
   display: flex;
 }
 
-.our-li:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .our-ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .our-ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0px;
+  }
 }
 
 .our-li {
   display: block;
+  max-width: 210px;
+}
+
+@media screen and (min-width: 480px) {
+  .our-div-logo {
+    max-width: 210px;
+  }
+  /*&:nth-child(2n+1) {
+            margin-right: 30px;
+        }*/
+}
+
+@media screen and (min-width: 768px) {
+  :not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .our-div-logo {
@@ -1040,8 +1017,11 @@ p {
 .logo1 {
   width: 44.27px;
   height: 49.23px;
-  margin-left: 62px;
-  margin-right: 62px;
+  /*margin-left: 62px;
+    margin-right: 62px;*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .logo2 {
